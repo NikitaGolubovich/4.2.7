@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 62px 0;
+    background-color: #c4c4c4;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.container__inner {
+    width: 500px;
+    /* height: 100%; */
+    display: inline-block;
+}
+
+.search__input {
+    height: 62px;
+    width: 100%;
+    border: none;
+    font-size: 48px;
+    box-sizing: border-box;
+    padding: 13px 5px;
+    outline: none;
+}
+
+.search__list,
+.search__pin-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.search__list-item {
+    width: 100%;
+    padding-left: 13px;
+    height: 44px;
+    font-size: 30px;
+    background: #e3e3e3;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+.search__pin-item:first-child {
+    margin-top: 45px;
+}
+
+.search__pin-item {
+    font-size: 24px;
+    background: #e27beb;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.search__pin-button {
+    width: 45px;
+    height: 40px;
+    background: url("../assets/img/close.svg") center no-repeat;
+    border: none;
+    cursor: pointer;
+    transition: 300ms background-size linear;
+}
+
+.search__pin-button:hover {
+    background-size: 120%;
+}
+
+.search__pin-text {
+    margin: 0;
+}
+
+.search__list-item:hover {
+    background-color: #65cdf9;
+}
